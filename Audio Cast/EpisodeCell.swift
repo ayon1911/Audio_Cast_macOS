@@ -7,9 +7,15 @@
 //
 
 import Cocoa
+import WebKit
 
 class EpisodeCell: NSTableCellView {
 
+    @IBOutlet weak var episodeLabel: NSTextField!
+    @IBOutlet weak var pubDateLabel: NSTextField!
+    @IBOutlet weak var overView: WebView!
+    
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
